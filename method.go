@@ -14,6 +14,7 @@ func addFunc(m myInt, a int) myInt {
 }
 func main() {
 	var a myInt
+	v
 	a.Add(10)
 	fmt.Println(a)
 }

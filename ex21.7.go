@@ -4,11 +4,15 @@ import (
 	"os"
 )
 type Writer func(string)
-
+type WriterInterface interface {
+	Write(string)
+}
 func writeHello(writer Writer) {
 	writer("Hello World")
 }
-
+func writeHello2(writer WriterInterface) {
+	writer.Write("Hello World")
+}
 func main() {
 	f, err := os.Create("test.txt")
 	if err != nil {
