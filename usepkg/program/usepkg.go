@@ -1,12 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"LEARNGOLANG/usepkg/custompkg"
 	"LEARNGOLANG/usepkg/exinit"
+	"fmt"
 )
+
 func main() {
-	fmt.Println("");
+	fmt.Println("")
 	custompkg.PrintCustom()
 	exinit.PrintD()
 }
